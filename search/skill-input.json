@@ -1,0 +1,15 @@
+{
+    "values": [
+        {
+            "recordId": "0",
+            "data":
+            {
+							"id": 1,
+            	"name": "Hallo, wie geht es dir?",
+							"last_modified": "5/1/2023 8:06:32 AM +01:00",
+							"size": 123,
+							"translated_name": "Hello how are you?"
+            }
+        }
+    ]
+}
