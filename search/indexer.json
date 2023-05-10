@@ -1,0 +1,37 @@
+{
+  "@odata.context": "https://search-test-01.search.windows.net/$metadata#indexers/$entity",
+  "@odata.etag": "\"0x8DB51390E9C648D\"",
+  "name": "mock-data-indexer",
+  "description": null,
+  "dataSourceName": "mock-data",
+  "skillsetName": "skillset1683662321970",
+  "targetIndexName": "mock-data",
+  "disabled": null,
+  "schedule": null,
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": null,
+    "maxFailedItemsPerBatch": null,
+    "base64EncodeKeys": null,
+    "configuration": {
+      "parsingMode": "json",
+      "allowSkillsetToReadFileData": true
+    }
+  },
+  "fieldMappings": [
+    {
+      "sourceFieldName": "/metadata_spo_library_id",
+      "targetFieldName": "id",
+      "mappingFunction": null
+    }
+  ],
+  "outputFieldMappings": [
+    {
+      "sourceFieldName": "document/translated_name",
+      "targetFieldName": "translated_name",
+      "mappingFunction": null
+    }
+  ],
+  "cache": null,
+  "encryptionKey": null
+}

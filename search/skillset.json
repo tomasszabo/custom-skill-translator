@@ -1,0 +1,50 @@
+{
+	"@odata.context": "https://search-test-01.search.windows.net/$metadata#skillsets/$entity",
+	"@odata.etag": "\"0x8DB50CCEB357FDD\"",
+	"name": "skillset1683662321970",
+	"description": "",
+	"skills": [
+		{
+			"@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+			"name": "#1",
+			"description": "",
+			"context": "/document",
+			"uri": "https://search-test-app-01.azurewebsites.net/api/translateskill?code=SjHO01Xa7QylQBqcr1DfXntf4tjvb0IsOFB-Udy3bcSVAzFuW5t93g==",
+			"httpMethod": "POST",
+			"timeout": "PT30S",
+			"batchSize": 1,
+			"degreeOfParallelism": 1,
+			"inputs": [
+				{
+					"name": "id",
+					"source": "/document/id"
+				},
+				{
+					"name": "name",
+					"source": "/document/metadata_spo_item_name"
+				},
+				{
+					"name": "last_modified",
+					"source": "/document/metadata_spo_item_last_modified"
+				},
+				{
+					"name": "size",
+					"source": "/document/metadata_spo_item_size"
+				}
+			],
+			"outputs": [
+				{
+					"name": "translated_name",
+					"targetName": "translated_name"
+				}
+			],
+			"httpHeaders": {}
+		}
+	],
+	"cognitiveServices": {
+		"@odata.type": "#Microsoft.Azure.Search.DefaultCognitiveServices",
+		"description": null
+	},
+	"knowledgeStore": null,
+	"encryptionKey": null
+}
