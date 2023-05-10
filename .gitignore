@@ -25,6 +25,8 @@ local.settings.json
 node_modules
 dist
 
+.DS_Store
+
 # Local python packages
 .python_packages/
 
