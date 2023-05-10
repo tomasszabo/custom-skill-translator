@@ -47,9 +47,9 @@ function httpRequest(url, options, body) {
   });
 }
 
-function search(recordId) {
+function search(id) {
   return httpRequest(searchUrl, searchOptions, {
-    search: recordId,
+    search: id,
     searchFields: "id"
   });
 };

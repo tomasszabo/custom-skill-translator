@@ -9,7 +9,7 @@
 			"name": "#1",
 			"description": "",
 			"context": "/document",
-			"uri": "https://search-test-app-01.azurewebsites.net/api/translateskill?code=SjHO01Xa7QylQBqcr1DfXntf4tjvb0IsOFB-Udy3bcSVAzFuW5t93g==",
+			"uri": "https://search-test-app-01.azurewebsites.net/api/translateskill",
 			"httpMethod": "POST",
 			"timeout": "PT30S",
 			"batchSize": 1,
@@ -38,7 +38,9 @@
 					"targetName": "translated_name"
 				}
 			],
-			"httpHeaders": {}
+			"httpHeaders": {
+				"x-functions-key": "xxxxxxxx"
+			}
 		}
 	],
 	"cognitiveServices": {
